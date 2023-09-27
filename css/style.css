@@ -1,0 +1,442 @@
+/*
+ Assignment Two | Interface Design Using CSS
+ Coded by Deep Biswas, Georgian College, ON, Canada.
+*/
+/* Custom Fonts */
+@font-face {
+    font-family: 'BreeLightOblique';
+    src: url(../fonts/BreeLightOblique.ttf);
+}
+@font-face {
+    font-family: 'AwanZaman';
+    src: url(../fonts/AwanZamanRegular.ttf);
+}
+@font-face {
+    font-family: 'JoyComicSans';
+    src: url(../fonts/ComicSansAlternates.ttf);
+}
+@font-face {
+    font-family: 'LoveBeautifulPeople';
+    src: url(../fonts/BeautifulPeople.ttf);
+}
+@font-face {
+    font-family: 'FearInsideOut';
+    src: url(../fonts/InsideOut.ttf);
+}
+@font-face {
+    font-family: 'MusicSymphony';
+    src: url(../fonts/SymphonyRegular.ttf);
+}
+@font-face {
+    font-family: 'FearFrightmare';
+    src: url(../fonts/FrightmareDemo.ttf);
+}
+@font-face {
+    font-family: 'AngerRoadrage';
+    src: url(../fonts/Roadrage.ttf);
+}
+@font-face {
+    font-family: 'AngerYourMurderer';
+    src: url(../fonts/Youmurderer.ttf);
+}
+@font-face {
+    font-family: 'DisgustLoki';
+    src: url(../fonts/Loki.ttf);
+}
+@font-face {
+    font-family: 'SadGoodbyeMyLover';
+    src: url(../fonts/GoodbyeMyLover.ttf);
+}
+@font-face {
+    font-family: 'ConfusedHallucination';
+    src: url(../fonts/SfHallucination.ttf);
+}
+@font-face {
+    font-family: 'SurpriseHaettenschweiler';
+    src: url(../fonts/Haettenschweiler.ttf);
+}
+@font-face {
+    font-family: 'HappinessRandom';
+    src: url(../fonts/Random.ttf);
+}
+@font-face {
+    font-family: 'LoveJuhaira';
+    src: url(../fonts/Juhaira.ttf);
+}
+/* Animation keyframes */
+@keyframes animate{
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+/* General Styling */
+html{
+    scroll-behavior: smooth;
+}
+.index-body{
+    margin: 0;
+    padding: 0;
+}
+/* Header Styling */
+.index-header{
+    background: linear-gradient(#ae4071, #611937 );
+    padding: 1% 15%;
+    display: flex;
+    gap: 2em;
+}
+@media (max-width: 797px){
+    .index-header{
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 30px;
+        text-align: center;
+    }
+}
+.index-header img{
+    border-radius: 10px;
+}
+.header-article h2:nth-child(1){
+    font-family: 'BreeLightOblique', sans-serif;
+    font-weight: 600;
+    font-size: 4em;
+    background: linear-gradient(90deg,#ffffff, #FFD700, #f5f5f5, #FFD700, #ffffff);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 20s linear infinite;
+}
+.header-article h2:nth-child(2){
+    color: #fafafa;
+    font-family: 'BreeLightOblique', sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+}
+.header-article p{
+    color: #fafafa;
+    font-family: 'AwanZaman', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+/* Main Song Styling */
+.index-main{
+    background-color: #f5f5f5;
+    padding: 2% 0%;
+}
+.music{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.music i{
+    color: #df0000;
+    font-size: 2em;
+}
+.first-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.first-line h3{
+    color: #e09244;
+    font-family: 'JoyComicSans';
+    font-size: 1.5em;
+    letter-spacing: 3px;
+}
+.second-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.second-line h3{
+    color: #E41B17;
+    font-family: 'LoveBeautifulPeople';
+    font-size: 1.5em;
+    letter-spacing: 3px;
+}
+.third-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.third-line h3{
+    color: #ff008c;
+    font-family: 'LoveBeautifulPeople', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 3px;
+}
+.fourth-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.fourth-line h3{
+    color: #020035;
+    font-family: 'FearInsideOut', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+.fifth-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.fifth-line h3{
+    color: #611937;
+    font-family: 'MusicSymphony', sans-serif;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+.sixth-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.sixth-line h3{
+    color: #0e0e0e;
+    font-family: 'FearFrightmare', sans-serif;
+    font-size: 2em;
+    letter-spacing: 3px;
+}
+.seventh-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.seventh-line h3{
+    color: #0702a8;
+    font-family: 'AngerRoadrage', sans-serif;
+    font-size: 1.3em;
+    letter-spacing: 0.5px;
+}
+.eighth-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.eighth-line h3{
+    color: #660000;
+    font-family: 'AngerYourMurderer', sans-serif;
+    font-size: 2em;
+    letter-spacing: 4px;
+}
+.ninth-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.ninth-line h3{
+    color: #644425;
+    font-family: 'DisgustLoki', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 3px;
+}
+.tenth-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.tenth-line h3{
+    color: #E41B17;
+    font-family: 'LoveBeautifulPeople', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 3px;
+}
+.eleventh-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.eleventh-line h3{
+    color: #020035;
+    font-family: 'SadGoodbyeMyLover', sans-serif;
+    font-size: 1.75em;
+    letter-spacing: 2px;
+}
+.twelfth-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.twelfth-line h3{
+    color: #a55d00;
+    font-family: 'JoyComicSans', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+}
+.thirteenth-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.thirteenth-line h3{
+    color: #358d02;
+    font-family: 'ConfusedHallucination', sans-serif;
+    font-size: 1.25em;
+    letter-spacing: 1px;
+}
+.fourteenth-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.fourteenth-line h3{
+    color: #970000;
+    font-family: 'SurpriseHaettenschweiler', sans-serif;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+.fifteenth-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.fifteenth-line h3{
+    color: #020035;
+    font-family: 'FearInsideOut', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 1.5px;
+}
+.sixteenth-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.sixteenth-line{
+    color: #ff7300;
+    font-family: 'HappinessRandom', sans-serif;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+}
+.seventeenth-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.seventeenth-line h3{
+    color: #611937;
+    font-family: 'MusicSymphony', sans-serif;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+.eighteenth-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.eighteenth-line h3{
+    color: #0e0e0e;
+    font-family: 'FearFrightmare', sans-serif;
+    font-size: 2em;
+    letter-spacing: 3px;
+}
+.nineteenth-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.nineteenth-line h3{
+    color: #0702a8;
+    font-family: 'AngerRoadrage', sans-serif;
+    font-size: 1.3em;
+    letter-spacing: 0.5px;
+}
+.twentieth-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.twentieth-line h3{
+    color: #660000;
+    font-family: 'AngerYourMurderer', sans-serif;
+    font-size: 2em;
+    letter-spacing: 4px;
+}
+.twenty-first-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.twenty-first-line h3{
+    color: #df0000;
+    font-family: 'LoveJuhaira', sans-serif;
+    font-size: 2em;
+    letter-spacing: 3px;
+}
+.twenty-second-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.twenty-second-line h3{
+    color: #0e0e0e;
+    font-family: 'FearFrightmare', sans-serif;
+    font-size: 2em;
+    letter-spacing: 3px;
+}
+.twenty-third-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.twenty-third-line h3{
+    color: #0702a8;
+    font-family: 'AngerRoadrage', sans-serif;
+    font-size: 1.3em;
+    letter-spacing: 0.5px;
+}
+.twenty-fourth-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.twenty-fourth-line h3{
+    color: #660000;
+    font-family: 'AngerYourMurderer', sans-serif;
+    font-size: 2em;
+    letter-spacing: 4px;
+}
+/* Footer Styling */
+.index-footer{
+    background: linear-gradient(#611937, #ae4071);
+    width: auto;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.index-footer p{
+    font-family: 'Montserrat', sans-serif;
+    color: #f5f5f5;
+}
+/*
+ Assignment Two | Interface Design Using CSS
+ Coded by Deep Biswas, Georgian College, ON, Canada.
+*/
